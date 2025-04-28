@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO and Accessibility Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium online coffee store offering specialty beans, brewing equipment, and coffee subscriptions">
+    <meta name="keywords" content="coffee, specialty coffee, beans, espresso, pour over, french press">
+    <meta name="author" content="Coffee Enthusiast">
+    <title>Love Cafe | Specialty Online Coffee Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/love caffe.png" type="image/x-icon">
+     <!-- Web Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="images/love caffe.png" alt="Love Cafe Logo" width="100">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Discover the Art of Premium Coffee</h1>
+            <p>Curated selection of specialty beans from around the world</p>
+            <a href="#products" class="btn">Explore Our Beans</a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <h2>Our Coffee Selection</h2>
+        <div class="columns">
+            <article>
+                <figure>
+                    <img src="images/ethiopian beans.png" alt="Ethiopian Yirgacheffe Beans">
+                    <figcaption>Ethiopian Yirgacheffe</figcaption>
+                </figure>
+                <details>
+                    <summary>Flavor Profile</summary>
+                    <p>Bright acidity with floral and citrus notes, medium body with a clean finish.</p>
+                </details>
+                <p class="price">6 BHD / 12oz</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/colombiaaa beans.png" alt="Colombian Supremo Beans">
+                    <figcaption>Colombian Supremo</figcaption>
+                </figure>
+                <details>
+                    <summary>Flavor Profile</summary>
+                    <p>Well-balanced with nutty and chocolate notes, mild acidity and full body.</p>
+                </details>
+                <p class="price">5 BHD / 12oz</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/samatra manhandeling.png" alt="Sumatra Mandheling Beans">
+                    <figcaption>Sumatra Mandheling</figcaption>
+                </figure>
+                <details>
+                    <summary>Flavor Profile</summary>
+                    <p>Earthy and complex with low acidity, heavy body and spicy undertones.</p>
+                </details>
+                <p class="price">7 BHD / 12oz</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section with Multimedia -->
+    <section id="about" class="section dark-bg">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><span class="first-letter">F</span>ounded in 2025, Love Cafe began as a passion project between three related coffee enthusiasts who wanted to share their love for specialty coffee with the world. We travel directly to coffee farms, building relationships with growers who share our commitment to quality and sustainability.</p>
+                
+                <p>Every bean we sell is carefully selected, freshly roasted, and delivered directly to your door. Our small-batch roasting process ensures peak flavor and aroma in every cup.</p>
+            
+                <!-- Progress bar showing our roasting process -->
+                <h3>Our Roasting Process</h3>
+                <label for="roasting">Light Roast:</label>
+                <progress id="roasting" value="30" max="100"> 30% </progress><br>
+                <label for="roasting2">Medium Roast:</label>
+                <progress id="roasting2" value="65" max="100"> 65% </progress><br>
+                <label for="roasting3">Dark Roast:</label>
+                <progress id="roasting3" value="90" max="100"> 90% </progress>
+            </div>
+            <div class="multimedia">
+                <video controls poster="images/love caffe.png">
+                    <source src="How to make Spanish Latte at home using instant coffee I EP.04.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Here is one of our Baristas making a Iced Spanish Latte.</figcaption>
+            </figure>
+                <audio controls>
+                    <source src="How to make a Spanish Latte.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Quiz Section -->
+    <section id="quiz" class="section">
+        <h2>Coffee Knowledge Quiz</h2>
+        <form id="coffeeQuiz">
+            <div class="quiz-question">
+                <p>1. What is the ideal water temperature for brewing coffee?</p>
+                <label><input type="radio" name="q1" value="a"> 160-170°F (71-77°C)</label><br>
+                <label><input type="radio" name="q1" value="b"> 195-205°F (90-96°C)</label><br>
+                <label><input type="radio" name="q1" value="c"> 212°F (100°C)</label>
+                <div class="feedback" id="feedback1"></div>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which country is the largest producer of coffee?</p>
+                <label><input type="radio" name="q2" value="a"> Colombia</label><br>
+                <label><input type="radio" name="q2" value="b"> Brazil</label><br>
+                <label><input type="radio" name="q2" value="c"> Vietnam</label>
+                <div class="feedback" id="feedback2"></div>
+            </div>
+            <button type="button" id="submitQuiz">Check Answers</button>
+        </form>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section dark-bg">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Road 2244, Manama</p>
+                <p>Phone: +973 33168882</p>
+                <p>Email: lovecafe@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Love Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
